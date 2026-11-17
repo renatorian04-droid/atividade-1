@@ -75,6 +75,48 @@ main {
   margin: 2.5%;
 }
 
+/* Parte 1 - Float */
+main img {
+  float: left;
+  margin: 0 16px 16px 0;
+}
+
+p.more {
+  font-family: verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: .8em;
+  clear: left;
+}
+
+/* Imagem do muffin */
+img[src*="muffin"] {
+  margin-left: 50px;
+}
+
+/* Parte 2 - CSS Shapes */
+
+/* Formato do pão */
+img[src*="bread"] {
+  shape-outside: ellipse(130px 105px at 50% 50%);
+}
+
+/* Formato do muffin */
+img[src*="muffin"] {
+  margin-left: 50px;
+  shape-outside: polygon(
+    0px 0px,
+    197px 0px,
+    241px 31px,
+    241px 68px,
+    226px 82px,
+    219px 131px,
+    250px 142px,
+    250px 158px,
+    0px 158px
+  );
+}
+
+/* h3 styles */
 h3 {
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -83,12 +125,6 @@ h3 {
   border-left: 3px solid;
   padding-left: 1em;
   margin-top: 2.5em;
-}
-
-p.more {
-  font-family: verdana, sans-serif;
-  text-transform: uppercase;
-  font-size: .8em;
 }
 
 /* aside "hours" styles */
@@ -107,6 +143,13 @@ footer {
   text-align: center;
   font-size: .8em;
   padding: 12px;
+}
+
+/* Parte 3 e 4 - Posicionamento da medalha */
+#award {
+  position: fixed;
+  top: 30px;
+  left: 50px;
 }
 
 h2 {
